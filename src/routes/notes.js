@@ -10,7 +10,7 @@ router.get("/", notesController.getAllNotes);
 router.get("/:id", notesController.getNotesById);
 
 // UPDATE - PATCH
-router.patch("/:id", notesController.updateNoteById);
+router.patch("/update/:id", notesController.updateNoteById);
 
 // DELETE - DELETE
 router.delete("/:id", notesController.deleteNotesById);
